@@ -1,0 +1,26 @@
+{
+    "name": "sashsvamir/yii2-recaptcha-widget",
+    "description": "Yii2 Google reCAPTCHA widget",
+    "keywords": ["yii2", "captcha", "recaptcha", "google", "widget"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/sashsvamir/yii2-recaptcha-widget",
+        "issues": "https://github.com/sashsvamir/yii2-recaptcha-widget/issues"
+    },
+    "authors": [
+        {
+            "name": "sashsvamir",
+            "homepage": "https://github.com/sashsvamir/"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "himiklab/yii2-recaptcha-widget": "1.0.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "sashsvamir\\yii2\\recaptcha\\": ""
+        }
+    }
+}
