@@ -91,7 +91,7 @@ class ReCaptcha extends \himiklab\yii2\recaptcha\ReCaptcha
 	 */
 	protected function getSuffix()
 	{
-		return '?=' . http_build_query([
+		return '?' . http_build_query([
 			'hl' => $this->getLanguageSuffix(),
 			'render' => 'explicit',
 			'onload' => 'recaptchaOnloadCallback',
