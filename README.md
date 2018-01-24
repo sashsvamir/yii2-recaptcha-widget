@@ -1,7 +1,12 @@
 # ReCaptcha Widget
 
+
 Widget to render [google recaptcha](https://developers.google.com/recaptcha/) and validate this field.
-This implementaion allow to use multiple widgets on one page, also you can load page by ajax several times.
+
+This implementaion allow to use:
+- multiple widgets on one page
+- also you can load page by ajax several times
+
 
 
 ![recaptcha](https://developers.google.com/recaptcha/images/light.png)
