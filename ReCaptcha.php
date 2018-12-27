@@ -109,12 +109,15 @@ class ReCaptcha extends \himiklab\yii2\recaptcha\ReCaptcha
 		// register js with recaptchaCallback and recaptchasStorage
 		$view->registerAssetBundle(ReCaptchaAsset::className());
 
-		// call recaptchaCallback (usally exetutes when is ajax)
-		$view->registerJs(/** @lang JavaScript */"
+        // call recaptchaCallback (usally exetutes when is ajax)
+		if(Yii::$app->request->isAjax) {
+            $view->registerJs(/** @lang JavaScript */
+                "
 			'use strict';
 			// register field as recaptcha
 			recaptchaOnloadCallback( document.querySelector('.g-recaptcha[data-captcha-id={$this->options['id']}]') );
 		", $view::POS_READY);
+        }
 	}
 
 	/**
